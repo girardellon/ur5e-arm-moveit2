@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ur5e_arm_moveit_config</name>
+  <version>0.0.0</version>
+  <description>MoveIt config for UR5e (arm only)</description>
+  <maintainer email="dardanopietro@libero.it">user</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Python launch dependencies -->
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Runtime nodes started by the launch -->
+  <exec_depend>ur_robot_driver</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Robot description dependencies -->
+  <exec_depend>ur_description</exec_depend>
+  <exec_depend>ur5e_arm_description</exec_depend>
+
+  <!-- Kinematics plugin referenced in kinematics.yaml -->
+  <exec_depend>kdl_kinematics_plugin</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
