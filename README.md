@@ -248,3 +248,4 @@ ros2 run ur5e_contactile_actions ur5e_contactile_actions_node --ros-args \
 - No simulation-only configuration provided
 - RViz configuration is not customized
 
+
